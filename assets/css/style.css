@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'DMSans';
+  src: url('../fonts/DMSans/DMSans-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('../fonts/DMSans/DMSans-Bold.ttf');
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: DMSans;
+  transition: all 200ms ease-in-out;
+}
+
+body {
+  margin: 0;
+  background-color: #2F1893;
+}
+
+header {
+  height: 100vh;
+  background: url("../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu #dribbble::after {
+  content: url('../images/fa-dribbble.png');
+}
+
+.header-menu #behance::after {
+  content: url('../images/fa-behance.png');
+}
+
+.header-menu {
+  padding-top: 84px;
+}
+
+.header-menu a {
+  margin: 0 44px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.header-menu a:hover,
+.header-menu .active {
+  opacity: 30%;
+}
+
+.slider {
+  position: relative;
+  margin-top: 122px;
+  height: 40vh;
+  text-align: center;
+  color: white;
+}
+
+.slide .sub-title {
+  font-weight: 700;
+  font-size: 24px;
+  display: inline;
+}
+
+.slide .title {
+  font-weight: 700;
+  margin: 25px auto !important;
+  font-size: 72px;
+}
+
+.slide .text {
+  font-size: 22px;
+  font-weight: 500;
+  width: 60%;
+  margin: auto;
+}
+
+.slider .dots {
+  margin: 40px auto;
+}
+
+.slider .dots span {
+  cursor: pointer;
+}
+
+.slider .dots span::after {
+  content: url("../images/fa-circle-o.png");
+}
+
+.slider .dots span:hover {
+  opacity: 30%;
+}
+
+
+.slider .dots span.active::after {
+  content: url("../images/fa-circle.png");
+}
+
+.slider .left {
+  position: absolute;
+  height: 100%;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.slider .left span::after {
+  content: url("../images/fa-angle-left.png");
+}
+
+.slider .right {
+  position: absolute;
+  height: 100%;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.slider .right span::after {
+  content: url("../images/fa-angle-right.png");
+}
+
+.slider .left:hover,
+.slider .right:hover {
+  opacity: 30%;
+}
+
+.slides-container {
+  display: flex;
+  overflow-y: auto;
+  width: 80%;
+  margin: auto;
+}
+
+.slide {
+  opacity: 0%;
+  display: none;
+}
+
+.slide.active {
+  /* animation: activeSlide 200ms ease-in-out 0 1; */
+  opacity: 100%;
+  display: block;
+}
+
+/* @keyframes activeSlide {
+  0% {
+    opacity: 0%;
+    display: none;
+  }
+
+  50% {
+    display: block;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+} */
