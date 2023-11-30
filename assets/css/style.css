@@ -10,6 +10,10 @@
   font-weight: 700;
 }
 
+:root {
+  --fadeShowTime: 1500ms;
+}
+
 * {
   box-sizing: border-box;
   font-family: DMSans;
@@ -67,6 +71,7 @@ header {
   height: 40vh;
   text-align: center;
   color: white;
+  animation: fadeShow var(--fadeShowTime) ease-in-out;
 }
 
 .slide .sub-title {
@@ -104,9 +109,9 @@ header {
   opacity: 30%;
 }
 
-
 .slider .dots span.active::after {
   content: url("../images/fa-circle.png");
+  animation: fadeShow var(--fadeShowTime) ease-in-out;
 }
 
 .slider .left {
@@ -150,27 +155,20 @@ header {
 }
 
 .slide {
-  opacity: 0%;
   display: none;
 }
 
 .slide.active {
-  /* animation: activeSlide 200ms ease-in-out 0 1; */
-  opacity: 100%;
+  animation: fadeShow var(--fadeShowTime) ease-in-out;
   display: block;
 }
 
-/* @keyframes activeSlide {
+@keyframes fadeShow {
   0% {
-    opacity: 0%;
-    display: none;
-  }
-
-  50% {
-    display: block;
+    opacity: 0;
   }
 
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
-} */
+}

@@ -20,9 +20,9 @@
       </div>
 
       <div class="slider">
-        <div class="left"><span></span></div>
-        <div class="right"><span></span></div>
-        <input type="number" id="currentSlide" value="1" slidesCount="3">
+        <div onclick="slideDown()" class="left"><span></span></div>
+        <div onclick="slideUp()" class="right"><span></span></div>
+        <input type="number" id="currentSlide" value="1" slidesCount="3" hidden>
         <div class="slides-container">
           <div class="slide active" id="slide-1">
             <p class="sub-title">Startup 1</p>
@@ -53,9 +53,9 @@
           </div>
         </div>
         <div class="dots">
-          <span id="slidedot1" class="active"></span>
-          <span id="slidedot2"></span>
-          <span id="slidedot3"></span>
+          <span id="slidedot1" class="slidedots active"></span>
+          <span id="slidedot2" class="slidedots"></span>
+          <span id="slidedot3" class="slidedots"></span>
         </div>
       </div>
     </header>
