@@ -13,6 +13,7 @@
 :root {
   --fadeShowTime: 1500ms;
   --fadeDownTime: 1500ms;
+  --fadeLeftTime: 200ms;
 }
 
 * {
@@ -20,6 +21,7 @@
   font-family: DMSans;
   transition: all 200ms ease-in-out;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -290,7 +292,7 @@ header {
   position: relative;
 }
 
-.vertical-slider-container .section-1 img{
+.vertical-slider-container .section-1 img {
   position: absolute;
   right: 214px;
   height: 100%;
@@ -370,6 +372,185 @@ header {
 
 /* End Vertical Slider */
 
+/* Start Login Form */
+
+#login {
+  min-height: 100vh;
+  background: url('../images/login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  width: 100%;
+}
+
+#login .container {
+  margin: 0 auto;
+  display: flex;
+  width: 83.3333%;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+#login .text-section {
+  color: white;
+  width: 40%;
+}
+
+#login .text-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  width: 80%;
+}
+
+#login .text-section p {
+  font-size: 16px;
+  font-weight: 400;
+  width: 80%;
+}
+
+#login .form-section {
+  width: 50%;
+}
+
+#login .form-section .form {
+  background-color: white;
+  border-radius: 15px;
+  width: 80%;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+#login .form-section .tabs {
+  color: #1E0E62;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+#login .form-section .tab {
+  width: 50%;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#login .form-section .tab:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+#login .form-section .tabs .border {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #1E0E62;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+}
+
+#login .form-section .tabs .border.left {
+  transform: translateX(0%);
+}
+
+#login .form-section .tabs .border.right {
+  transform: translateX(100%);
+}
+
+#login .form-container {
+  width: 60%;
+  margin: auto;
+  display: none;
+}
+
+.show{
+  display: block !important;
+}
+
+#login input[type=text] {
+  height: 50px;
+  border-radius: 100px;
+  border: 2px #EBEAED solid;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#login input[type=text]:focus {
+  outline: #cacaca solid 1px !important;
+}
+
+#login .main-btn {
+  background-color: #25DAC5;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  border-radius: 100px;
+  margin-top: 20px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#login .main-btn:hover {
+  background-color: #1fc6b2;
+}
+
+#login .divider {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+#login .divider .line {
+  display: block;
+  width: 40%;
+  height: 1px;
+  background-color: #cacaca;
+}
+
+#login .second-btn {
+  display: block;
+  background-color: #1DA1F2;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#login .second-btn:hover {
+  background-color: #1489d2;
+}
+
+.fade-left {
+  animation: fadeLeft var(--fadeLeftTime) ease-in-out;
+}
+
+.fade-right {
+  animation: fadeRight var(--fadeLeftTime) ease-in-out;
+}
+
+/* End Login Form */
+
 /* Animations */
 @keyframes fadeShow {
   0% {
@@ -402,6 +583,30 @@ header {
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 

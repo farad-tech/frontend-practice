@@ -17,7 +17,7 @@
     <header id="home">
       <div class="header-menu">
         <a href="#Home">Home</a>
-        <a href="#Features">Features</a>
+        <a href="#vertical-slider">Features</a>
         <a href="#Pricing">Pricing</a>
         <a href="#Blog">Blog</a>
         <a id="dribbble" href="#dribbble"></a>
@@ -92,16 +92,33 @@
     <!-- Content End -->
 
     <!-- Vertical Slider Start -->
-
     <div id="vertical-slider">
       <div class="vertical-slider-container">
         <div class="dots">
-          <span id="slidedot1" onclick="activeVerticalSlide(this)" slide-id="verticalSlider1" class="slidedots active"></span>
-          <span id="slidedot2" onclick="activeVerticalSlide(this)" slide-id="verticalSlider2" class="slidedots"></span>
-          <span id="slidedot3" onclick="activeVerticalSlide(this)" slide-id="verticalSlider3" class="slidedots"></span>
+          <span
+            id="slidedot1"
+            onclick="activeVerticalSlide(this)"
+            slide-id="verticalSlider1"
+            class="slidedots active"
+          ></span>
+          <span
+            id="slidedot2"
+            onclick="activeVerticalSlide(this)"
+            slide-id="verticalSlider2"
+            class="slidedots"
+          ></span>
+          <span
+            id="slidedot3"
+            onclick="activeVerticalSlide(this)"
+            slide-id="verticalSlider3"
+            class="slidedots"
+          ></span>
         </div>
         <div class="slides">
-          <div class="slide-vertical active-slide-vertical" id="verticalSlider1">
+          <div
+            class="slide-vertical active-slide-vertical"
+            id="verticalSlider1"
+          >
             <div class="section-1">
               <img src="./assets/images/mockup.png" />
             </div>
@@ -197,10 +214,59 @@
         </div>
       </div>
     </div>
-
     <!-- Vertical Slider End -->
+
+    <!-- Login Form Start -->
+    <div id="login">
+      <div class="container">
+        <div class="text-section">
+          <h2>We solve digital problems with an outstanding creative flare</h2>
+          <p>
+            We have created a new product that will help designers, developers
+            and companies create websites for their startups quickly and easily.
+          </p>
+        </div>
+        <div class="form-section">
+          <div class="form">
+            <div class="tabs">
+              <div class="tab" onclick="form('left', 'register')">Sign up</div>
+              <div class="tab" onclick="form('right', 'login-form')">Login</div>
+              <div class="border"></div>
+            </div>
+            <div class="form-container show" id="register">
+              <form>
+                <input type="text" name="" id="" placeholder="Your email" />
+                <input type="text" name="" id="" placeholder="Your Password" />
+                <button class="main-btn">Create An Account</button>
+                <div class="divider">
+                  <span class="line"></span>
+                  <span>or</span>
+                  <span class="line"></span>
+                </div>
+                <a class="second-btn">Register via Twitter</a>
+              </form>
+            </div>
+            <div class="form-container" id="login-form">
+              <form>
+                <input type="text" name="" id="" placeholder="Your email" />
+                <input type="text" name="" id="" placeholder="Your Password" />
+                <button class="main-btn">Login To Account</button>
+                <div class="divider">
+                  <span class="line"></span>
+                  <span>or</span>
+                  <span class="line"></span>
+                </div>
+                <a class="second-btn">Login via Twitter</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login Form End -->
 
     <script src="./assets/javascript/slider.js"></script>
     <script src="./assets/javascript/vertical-slider.js"></script>
+    <script src="./assets/javascript/form.js"></script>
   </body>
 </html>
