@@ -96,17 +96,79 @@
     <div id="vertical-slider">
       <div class="vertical-slider-container">
         <div class="dots">
-          <span id="slidedot1" class="slidedots active"></span>
-          <span id="slidedot2" class="slidedots"></span>
-          <span id="slidedot3" class="slidedots"></span>
+          <span id="slidedot1" onclick="activeVerticalSlide(this)" slide-id="verticalSlider1" class="slidedots active"></span>
+          <span id="slidedot2" onclick="activeVerticalSlide(this)" slide-id="verticalSlider2" class="slidedots"></span>
+          <span id="slidedot3" onclick="activeVerticalSlide(this)" slide-id="verticalSlider3" class="slidedots"></span>
         </div>
         <div class="slides">
-          <div class="slide-vertical">
+          <div class="slide-vertical active-slide-vertical" id="verticalSlider1">
             <div class="section-1">
               <img src="./assets/images/mockup.png" />
             </div>
             <div class="section-2">
-              <h3>We Create Something New</h3>
+              <h3>We Create Something New 1</h3>
+              <p class="main-text">
+                We have created a new product that will help designers,
+                developers and companies create websites for their startups
+                quickly and easily.
+              </p>
+              <div class="icons-section">
+                <div class="icon-1">
+                  <div class="icon"></div>
+                  <p class="title">30 New feature pages</p>
+                  <p class="text">
+                    Startup Framework contains components and complex blocks
+                    which can easily.
+                  </p>
+                </div>
+                <div class="icon-2">
+                  <div class="icon"></div>
+                  <p class="title">Useful Symbol Components</p>
+                  <p class="text">
+                    Samples will show you the feeling on how to play around
+                    using the components.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-vertical" id="verticalSlider2">
+            <div class="section-1">
+              <img src="./assets/images/mockup.png" />
+            </div>
+            <div class="section-2">
+              <h3>We Create Something New 2</h3>
+              <p class="main-text">
+                We have created a new product that will help designers,
+                developers and companies create websites for their startups
+                quickly and easily.
+              </p>
+              <div class="icons-section">
+                <div class="icon-1">
+                  <div class="icon"></div>
+                  <p class="title">30 New feature pages</p>
+                  <p class="text">
+                    Startup Framework contains components and complex blocks
+                    which can easily.
+                  </p>
+                </div>
+                <div class="icon-2">
+                  <div class="icon"></div>
+                  <p class="title">Useful Symbol Components</p>
+                  <p class="text">
+                    Samples will show you the feeling on how to play around
+                    using the components.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-vertical" id="verticalSlider3">
+            <div class="section-1">
+              <img src="./assets/images/mockup.png" />
+            </div>
+            <div class="section-2">
+              <h3>We Create Something New 3</h3>
               <p class="main-text">
                 We have created a new product that will help designers,
                 developers and companies create websites for their startups
@@ -139,5 +201,6 @@
     <!-- Vertical Slider End -->
 
     <script src="./assets/javascript/slider.js"></script>
+    <script src="./assets/javascript/vertical-slider.js"></script>
   </body>
 </html>
