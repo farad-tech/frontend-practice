@@ -13,7 +13,7 @@
 :root {
   --fadeShowTime: 1500ms;
   --fadeDownTime: 1500ms;
-  --fadeLeftTime: 200ms;
+  --fadeLeftTime: 300ms;
 }
 
 * {
@@ -467,7 +467,7 @@ header {
   display: none;
 }
 
-.show{
+.show {
   display: block !important;
 }
 
@@ -549,7 +549,83 @@ header {
   animation: fadeRight var(--fadeLeftTime) ease-in-out;
 }
 
+.fade-down {
+  animation: fadeDown var(--fadeLeftTime) ease-in-out;
+}
+
+
 /* End Login Form */
+
+/* Start Happy Clients */
+
+#happyClients {
+  min-height: 100vh;
+}
+
+#happyClients .container {
+  padding-top: 80px;
+  margin: auto;
+  width: 73.333%;
+  min-height: 100vh;
+  color: white;
+}
+
+#happyClients .container h4 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#happyClients .container .testimonial {
+  width: 48%;
+  min-height: 237px;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+  border: 2px rgba(255, 255, 255, 0.115) solid;
+  padding: 35px 28px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+#happyClients .container .testimonial .icon span {
+  height: 70px;
+  width: 70px;
+  display: block;
+  border-radius: 10px;
+}
+
+#happyClients .container .testimonial .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#happyClients .container .testimonial .content p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding-left: 30px;
+}
+
+#happyClients .container .testimonial .content span {
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  display: block;
+  opacity: 30%;
+}
+
+/* Start Happy Clients */
 
 /* Animations */
 @keyframes fadeShow {
