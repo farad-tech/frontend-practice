@@ -24,6 +24,10 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   background-color: #2F1893;
@@ -553,7 +557,6 @@ header {
   animation: fadeDown var(--fadeLeftTime) ease-in-out;
 }
 
-
 /* End Login Form */
 
 /* Start Happy Clients */
@@ -626,6 +629,75 @@ header {
 }
 
 /* Start Happy Clients */
+
+#callToAction {
+  min-height: 76vh;
+  background: url('../images/callToAction.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+}
+
+#callToAction .container {
+  margin: auto;
+  width: 35%;
+}
+
+#callToAction .container h5 {
+ font-size: 58px;
+ font-weight: 700;
+ padding-top: 80px;
+ margin: 0;
+ margin-bottom: 40px;
+}
+
+#callToAction .container p {
+ font-size: 22px;
+ font-weight: 500;
+ margin: 0;
+}
+
+#callToAction .container .buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+}
+
+#callToAction .container .buttons .play{
+  width: 70px;
+  height: 70px;
+  background-color: #EA3223;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#callToAction .container .buttons .play:hover{
+  background-color: #cd2e1f;
+}
+
+#callToAction .container .buttons .play::before{
+  content: url('../images/play.png');
+  vertical-align: -130%;
+}
+
+#callToAction .container .buttons .getStarted{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: #1fc6b2;
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+  border-radius: 100px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#callToAction .container .buttons .getStarted:hover {
+  background-color: #159f8f;
+}
 
 /* Animations */
 @keyframes fadeShow {
