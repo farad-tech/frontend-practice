@@ -563,6 +563,7 @@ header {
 
 #happyClients {
   min-height: 100vh;
+  padding-bottom: 60px;
 }
 
 #happyClients .container {
@@ -628,8 +629,9 @@ header {
   opacity: 30%;
 }
 
-/* Start Happy Clients */
+/* End Happy Clients */
 
+/* Start Call To Action */
 #callToAction {
   min-height: 76vh;
   background: url('../images/callToAction.png');
@@ -646,27 +648,27 @@ header {
 }
 
 #callToAction .container h5 {
- font-size: 58px;
- font-weight: 700;
- padding-top: 80px;
- margin: 0;
- margin-bottom: 40px;
+  font-size: 58px;
+  font-weight: 700;
+  padding-top: 80px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 #callToAction .container p {
- font-size: 22px;
- font-weight: 500;
- margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
 }
 
-#callToAction .container .buttons{
+#callToAction .container .buttons {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   align-items: center;
 }
 
-#callToAction .container .buttons .play{
+#callToAction .container .buttons .play {
   width: 70px;
   height: 70px;
   background-color: #EA3223;
@@ -674,16 +676,16 @@ header {
   cursor: pointer;
 }
 
-#callToAction .container .buttons .play:hover{
+#callToAction .container .buttons .play:hover {
   background-color: #cd2e1f;
 }
 
-#callToAction .container .buttons .play::before{
+#callToAction .container .buttons .play::before {
   content: url('../images/play.png');
   vertical-align: -130%;
 }
 
-#callToAction .container .buttons .getStarted{
+#callToAction .container .buttons .getStarted {
   display: flex;
   align-items: center;
   height: 70px;
@@ -698,6 +700,78 @@ header {
 #callToAction .container .buttons .getStarted:hover {
   background-color: #159f8f;
 }
+
+/* End Call To Action */
+
+/* Start Show Case */
+
+#showCase {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+#showCase .container {
+  width: 75%;
+  margin: auto;
+  color: white;
+}
+
+#showCase .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#showCase .heading h5 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+#showCase .heading .allWorks {
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px rgba(255, 255, 255, 0.3) solid;
+  padding: 11px 24px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#showCase .heading .allWorks:hover {
+  border: 2px rgba(255, 255, 255, 0.8) solid;
+}
+
+#showCase .work-cases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#showCase .work-single-case {
+  width: 48%;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+#showCase .work-single-case img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#showCase .work-single-case .category {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+#showCase .work-single-case .title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+/* End Show Case */
 
 /* Animations */
 @keyframes fadeShow {
