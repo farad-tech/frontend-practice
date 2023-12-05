@@ -771,7 +771,68 @@ header {
   font-weight: 500;
   margin-top: 10px;
 }
+
 /* End Show Case */
+
+/* Start Teams */
+#teams {
+  min-height: 100vh;
+  padding-top: 20px;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+#teams .container {
+  width: 69%;
+  color: white;
+}
+
+#teams .heading h5 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#teams .cards {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#teams .cards .card {
+  width: 33%;
+  margin-bottom: 70px;
+}
+
+#teams .card .profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+#teams .card .name {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 17px;
+  margin-bottom: 4px;
+}
+
+#teams .card .position {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#teams .card .social a {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* End Teams */
 
 /* Animations */
 @keyframes fadeShow {
