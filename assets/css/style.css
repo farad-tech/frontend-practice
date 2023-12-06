@@ -33,6 +33,64 @@ body {
   background-color: #2F1893;
 }
 
+input:not(input[type=checkbox]),
+select,
+textarea {
+  height: 50px;
+  border-radius: 100px;
+  border: 2px #EBEAED solid;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #1E0E62;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+textarea {
+  border-radius: 10px !important;
+  height: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: #cacaca solid 1px !important;
+}
+
+select {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  accent-color: #25DAC5 !important;
+}
+
+label {
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 12px 38px;
+  background-color: #25DAC5;
+  color: white;
+  border: 0;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #19c2ae;
+}
+
 /* Header */
 header {
   min-height: 100vh;
@@ -475,21 +533,6 @@ header {
   display: block !important;
 }
 
-#login input[type=text] {
-  height: 50px;
-  border-radius: 100px;
-  border: 2px #EBEAED solid;
-  width: 100%;
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
-#login input[type=text]:focus {
-  outline: #cacaca solid 1px !important;
-}
-
 #login .main-btn {
   background-color: #25DAC5;
   width: 100%;
@@ -834,6 +877,277 @@ header {
 }
 
 /* End Teams */
+
+
+/* Start Contact */
+
+#contact {
+  color: white;
+  min-height: 100vh;
+  background-image: url('../images/contact-bg.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact .container {
+  width: 75%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact h5 {
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 120px;
+  margin: 0;
+}
+
+#contact .section-1 {
+  width: 37%;
+}
+
+#contact .section-1 p {
+  margin-top: 28px;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#contact .section-1 span {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 44px 0;
+  display: block;
+}
+
+#contact .section-1 .phone::before {
+  content: url('../images/fa-phone.png');
+  margin-right: 15px;
+}
+
+#contact .section-1 .email::before {
+  content: url('../images/fa-envelope.png');
+  margin-right: 15px;
+}
+
+#contact .section-1 .address::before {
+  content: url('../images/fa-building-o.png');
+  margin-right: 15px;
+}
+
+#contact .section-1 a {
+  color: white;
+}
+
+#contact .section-2 {
+  width: 41%;
+}
+
+#contact form {
+  margin-top: 100px;
+  background-color: white;
+  padding: 58px 50px;
+  border-radius: 10px;
+}
+
+#contact form label {
+  color: #1E0E62;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inputs-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inputs-group .yourname {
+  width: 55%;
+}
+
+.inputs-group .budget {
+  width: 40%;
+}
+
+.inputs-group .email {
+  width: 100%;
+}
+
+.inputs-group .message {
+  width: 100%;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center !important;
+}
+
+.checkbox-group label {
+  color: rgba(21.06, 20.34, 56.79, 0.40) !important;
+  font-size: 16px;
+  margin: 0 !important;
+  padding-left: 8px;
+}
+
+/* End Contact */
+
+/* Start Pricing */
+
+#pricing {
+  min-height: 100vh;
+  background-image: url('../images/bg-pricing.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 100px;
+}
+
+#pricing .container {
+
+  width: 75%;
+  margin: auto;
+}
+
+#pricing h5 {
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+#pricing .text {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 54px;
+}
+
+#price-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+#price-cards .price-card {
+  width: 31%;
+  border-radius: 10px;
+  padding: 44px 66px 44px 56px;
+  border: 2px rgba(255, 255, 255, 0.2) solid;
+}
+
+.price-card h6 {
+  padding: 0 27px;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.price-card .price {
+  padding: 0 27px;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  word-wrap: break-word;
+  position: relative;
+  display: inline-block;
+  margin-top: 26px;
+  margin-bottom: 44px;
+}
+
+.price-card .price sup {
+  position: absolute;
+  right: 15px;
+  top: -20px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.price-card .features span {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.price-card .features span:hover {
+  padding-left: 6px;
+}
+
+.price-card .features span::before {
+  content: url('../images/check-Icon.png');
+  width: 12px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.price-card .features .uncheck {
+  padding-left: 27px;
+  opacity: 0.7;
+}
+
+.price-card .features .uncheck:hover {
+  padding-left: 33px;
+}
+
+.price-card .features .uncheck::before {
+  display: none;
+}
+
+.price-card .get-started {
+  display: block;
+  width: 100%;
+  padding: 17px 0;
+  border-radius: 120px;
+  border: 2px rgba(255, 255, 255, 0.3) solid;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 26px;
+}
+
+.price-card .get-started:hover{
+  border: 2px #E93A7D solid !important;
+  background-color: #E93A7D !important;
+}
+
+.price-card .active{
+  border: 2px #E93A7D solid !important;
+  background-color: #E93A7D !important;
+}
+
+.price-card .active:hover {
+  border: 2px #b6245c solid !important;
+  background-color: #b6245c !important;
+}
+
+
+
+/* End Pricing */
 
 /* Animations */
 @keyframes fadeShow {

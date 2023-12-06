@@ -5,456 +5,561 @@
  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front end practice</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Header start -->
-    <header id="home">
-      <div class="header-menu">
-        <a href="#Home">Home</a>
-        <a href="#vertical-slider">Features</a>
-        <a href="#Pricing">Pricing</a>
-        <a href="#Blog">Blog</a>
-        <a id="dribbble" href="#dribbble"></a>
-        <a id="behance" href="#behance"></a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front end practice</title>
 
-      <div class="slider">
-        <div onclick="slideDown()" class="left"><span></span></div>
-        <div onclick="slideUp()" class="right"><span></span></div>
-        <input
-          type="number"
-          id="currentSlide"
-          value="1"
-          slidesCount="3"
-          hidden
-        />
-        <div class="slides-container">
-          <div class="slide active" id="slide-1">
-            <p class="sub-title">Startup 1</p>
-            <p class="title">Lorem ipsum dolor</p>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
-              purus viverra accumsan in nisl nisi
-            </p>
-          </div>
-          <div class="slide" id="slide-2">
-            <p class="sub-title">Startup 2</p>
-            <p class="title">Lorem ipsum dolor</p>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
-              purus viverra accumsan in nisl nisi
-            </p>
-          </div>
-          <div class="slide" id="slide-3">
-            <p class="sub-title">Startup 3</p>
-            <p class="title">Lorem ipsum dolor</p>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
-              purus viverra accumsan in nisl nisi
-            </p>
-          </div>
-        </div>
-        <div class="dots">
-          <span id="slidedot1" class="slidedots active"></span>
-          <span id="slidedot2" class="slidedots"></span>
-          <span id="slidedot3" class="slidedots"></span>
-        </div>
-      </div>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-      <div class="call-to-action-container">
-        <a class="call-to-action"> Create an Account </a>
-      </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- Content Start -->
-    <div id="content">
-      <div class="content-place-holder">
-        <p class="tiny-title">Free Sample</p>
-        <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-        <p class="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
-          purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris
-          rhoncus aenean vel elit scelerisque
-        </p>
-      </div>
+<body>
+  <!-- Header start -->
+  <header id="home">
+    <div class="header-menu">
+      <a href="#Home">Home</a>
+      <a href="#vertical-slider">Features</a>
+      <a href="#Pricing">Pricing</a>
+      <a href="#Blog">Blog</a>
+      <a id="dribbble" href="#dribbble"></a>
+      <a id="behance" href="#behance"></a>
     </div>
-    <!-- Content End -->
 
-    <!-- Vertical Slider Start -->
-    <div id="vertical-slider">
-      <div class="vertical-slider-container">
-        <div class="dots">
-          <span
-            id="slidedot1"
-            onclick="activeVerticalSlide(this)"
-            slide-id="verticalSlider1"
-            class="slidedots active"
-          ></span>
-          <span
-            id="slidedot2"
-            onclick="activeVerticalSlide(this)"
-            slide-id="verticalSlider2"
-            class="slidedots"
-          ></span>
-          <span
-            id="slidedot3"
-            onclick="activeVerticalSlide(this)"
-            slide-id="verticalSlider3"
-            class="slidedots"
-          ></span>
-        </div>
-        <div class="slides">
-          <div
-            class="slide-vertical active-slide-vertical"
-            id="verticalSlider1"
-          >
-            <div class="section-1">
-              <img src="./assets/images/mockup.png" />
-            </div>
-            <div class="section-2">
-              <h3>We Create Something New 1</h3>
-              <p class="main-text">
-                We have created a new product that will help designers,
-                developers and companies create websites for their startups
-                quickly and easily.
-              </p>
-              <div class="icons-section">
-                <div class="icon-1">
-                  <div class="icon"></div>
-                  <p class="title">30 New feature pages</p>
-                  <p class="text">
-                    Startup Framework contains components and complex blocks
-                    which can easily.
-                  </p>
-                </div>
-                <div class="icon-2">
-                  <div class="icon"></div>
-                  <p class="title">Useful Symbol Components</p>
-                  <p class="text">
-                    Samples will show you the feeling on how to play around
-                    using the components.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide-vertical" id="verticalSlider2">
-            <div class="section-1">
-              <img src="./assets/images/mockup.png" />
-            </div>
-            <div class="section-2">
-              <h3>We Create Something New 2</h3>
-              <p class="main-text">
-                We have created a new product that will help designers,
-                developers and companies create websites for their startups
-                quickly and easily.
-              </p>
-              <div class="icons-section">
-                <div class="icon-1">
-                  <div class="icon"></div>
-                  <p class="title">30 New feature pages</p>
-                  <p class="text">
-                    Startup Framework contains components and complex blocks
-                    which can easily.
-                  </p>
-                </div>
-                <div class="icon-2">
-                  <div class="icon"></div>
-                  <p class="title">Useful Symbol Components</p>
-                  <p class="text">
-                    Samples will show you the feeling on how to play around
-                    using the components.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide-vertical" id="verticalSlider3">
-            <div class="section-1">
-              <img src="./assets/images/mockup.png" />
-            </div>
-            <div class="section-2">
-              <h3>We Create Something New 3</h3>
-              <p class="main-text">
-                We have created a new product that will help designers,
-                developers and companies create websites for their startups
-                quickly and easily.
-              </p>
-              <div class="icons-section">
-                <div class="icon-1">
-                  <div class="icon"></div>
-                  <p class="title">30 New feature pages</p>
-                  <p class="text">
-                    Startup Framework contains components and complex blocks
-                    which can easily.
-                  </p>
-                </div>
-                <div class="icon-2">
-                  <div class="icon"></div>
-                  <p class="title">Useful Symbol Components</p>
-                  <p class="text">
-                    Samples will show you the feeling on how to play around
-                    using the components.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Vertical Slider End -->
-
-    <!-- Login Form Start -->
-    <div id="login">
-      <div class="container">
-        <div class="text-section">
-          <h2>We solve digital problems with an outstanding creative flare</h2>
-          <p>
-            We have created a new product that will help designers, developers
-            and companies create websites for their startups quickly and easily.
+    <div class="slider">
+      <div onclick="slideDown()" class="left"><span></span></div>
+      <div onclick="slideUp()" class="right"><span></span></div>
+      <input type="number" id="currentSlide" value="1" slidesCount="3" hidden />
+      <div class="slides-container">
+        <div class="slide active" id="slide-1">
+          <p class="sub-title">Startup 1</p>
+          <p class="title">Lorem ipsum dolor</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
+            purus viverra accumsan in nisl nisi
           </p>
         </div>
-        <div class="form-section">
-          <div class="form">
-            <div class="tabs">
-              <div class="tab" onclick="form('left', 'register')">Sign up</div>
-              <div class="tab" onclick="form('right', 'login-form')">Login</div>
-              <div class="border"></div>
+        <div class="slide" id="slide-2">
+          <p class="sub-title">Startup 2</p>
+          <p class="title">Lorem ipsum dolor</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
+            purus viverra accumsan in nisl nisi
+          </p>
+        </div>
+        <div class="slide" id="slide-3">
+          <p class="sub-title">Startup 3</p>
+          <p class="title">Lorem ipsum dolor</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
+            purus viverra accumsan in nisl nisi
+          </p>
+        </div>
+      </div>
+      <div class="dots">
+        <span id="slidedot1" class="slidedots active"></span>
+        <span id="slidedot2" class="slidedots"></span>
+        <span id="slidedot3" class="slidedots"></span>
+      </div>
+    </div>
+
+    <div class="call-to-action-container">
+      <a class="call-to-action"> Create an Account </a>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Content Start -->
+  <div id="content">
+    <div class="content-place-holder">
+      <p class="tiny-title">Free Sample</p>
+      <h1>Lorem ipsum dolor sit amet, consectetur</h1>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas
+        purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris
+        rhoncus aenean vel elit scelerisque
+      </p>
+    </div>
+  </div>
+  <!-- Content End -->
+
+  <!-- Vertical Slider Start -->
+  <div id="vertical-slider">
+    <div class="vertical-slider-container">
+      <div class="dots">
+        <span id="slidedot1" onclick="activeVerticalSlide(this)" slide-id="verticalSlider1"
+          class="slidedots active"></span>
+        <span id="slidedot2" onclick="activeVerticalSlide(this)" slide-id="verticalSlider2" class="slidedots"></span>
+        <span id="slidedot3" onclick="activeVerticalSlide(this)" slide-id="verticalSlider3" class="slidedots"></span>
+      </div>
+      <div class="slides">
+        <div class="slide-vertical active-slide-vertical" id="verticalSlider1">
+          <div class="section-1">
+            <img src="./assets/images/mockup.png" />
+          </div>
+          <div class="section-2">
+            <h3>We Create Something New 1</h3>
+            <p class="main-text">
+              We have created a new product that will help designers,
+              developers and companies create websites for their startups
+              quickly and easily.
+            </p>
+            <div class="icons-section">
+              <div class="icon-1">
+                <div class="icon"></div>
+                <p class="title">30 New feature pages</p>
+                <p class="text">
+                  Startup Framework contains components and complex blocks
+                  which can easily.
+                </p>
+              </div>
+              <div class="icon-2">
+                <div class="icon"></div>
+                <p class="title">Useful Symbol Components</p>
+                <p class="text">
+                  Samples will show you the feeling on how to play around
+                  using the components.
+                </p>
+              </div>
             </div>
-            <div class="form-container show" id="register">
-              <form>
-                <input type="text" name="" id="" placeholder="Your email" />
-                <input type="text" name="" id="" placeholder="Your Password" />
-                <button class="main-btn">Create An Account</button>
-                <div class="divider">
-                  <span class="line"></span>
-                  <span>or</span>
-                  <span class="line"></span>
-                </div>
-                <a class="second-btn">Register via Twitter</a>
-              </form>
+          </div>
+        </div>
+        <div class="slide-vertical" id="verticalSlider2">
+          <div class="section-1">
+            <img src="./assets/images/mockup.png" />
+          </div>
+          <div class="section-2">
+            <h3>We Create Something New 2</h3>
+            <p class="main-text">
+              We have created a new product that will help designers,
+              developers and companies create websites for their startups
+              quickly and easily.
+            </p>
+            <div class="icons-section">
+              <div class="icon-1">
+                <div class="icon"></div>
+                <p class="title">30 New feature pages</p>
+                <p class="text">
+                  Startup Framework contains components and complex blocks
+                  which can easily.
+                </p>
+              </div>
+              <div class="icon-2">
+                <div class="icon"></div>
+                <p class="title">Useful Symbol Components</p>
+                <p class="text">
+                  Samples will show you the feeling on how to play around
+                  using the components.
+                </p>
+              </div>
             </div>
-            <div class="form-container" id="login-form">
-              <form>
-                <input type="text" name="" id="" placeholder="Your email" />
-                <input type="text" name="" id="" placeholder="Your Password" />
-                <button class="main-btn">Login To Account</button>
-                <div class="divider">
-                  <span class="line"></span>
-                  <span>or</span>
-                  <span class="line"></span>
-                </div>
-                <a class="second-btn">Login via Twitter</a>
-              </form>
+          </div>
+        </div>
+        <div class="slide-vertical" id="verticalSlider3">
+          <div class="section-1">
+            <img src="./assets/images/mockup.png" />
+          </div>
+          <div class="section-2">
+            <h3>We Create Something New 3</h3>
+            <p class="main-text">
+              We have created a new product that will help designers,
+              developers and companies create websites for their startups
+              quickly and easily.
+            </p>
+            <div class="icons-section">
+              <div class="icon-1">
+                <div class="icon"></div>
+                <p class="title">30 New feature pages</p>
+                <p class="text">
+                  Startup Framework contains components and complex blocks
+                  which can easily.
+                </p>
+              </div>
+              <div class="icon-2">
+                <div class="icon"></div>
+                <p class="title">Useful Symbol Components</p>
+                <p class="text">
+                  Samples will show you the feeling on how to play around
+                  using the components.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Login Form End -->
+  </div>
+  <!-- Vertical Slider End -->
 
-    <!-- Happy Clients Start -->
-    <div id="happyClients">
-      <div class="container">
-        <h4>Our Happy Clients</h4>
-        <div class="testimonials">
-          <div class="testimonial">
-            <div class="icon">
-              <span
-                style="background-image: url('./assets/images/Mask.png')"
-              ></span>
-            </div>
-            <div class="content">
-              <p>
-                Get a fully retina ready site when you build with Startup
-                Framework. Websites look sharper and more gorgeous on devices
-                with retina display support
-              </p>
-              <span>Rayhan Curran</span>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="icon">
-              <span style="background: url('./assets/images/Mask2.png')"></span>
-            </div>
-            <div class="content">
-              <p>
-                As a business targeting high net worth individuals, we were
-                looking for a slick, cool and mini-malistic design for our
-                website
-              </p>
-              <span>Kayley Frame</span>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="icon">
-              <span style="background: url('./assets/images/Mask3.png')"></span>
-            </div>
-            <div class="content">
-              <p>
-                The most important part of the Startup Framework is the samples
-              </p>
-              <span>Gene Whitfield</span>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="icon">
-              <span style="background: url('./assets/images/Mask4.png')"></span>
-            </div>
-            <div class="content">
-              <p>
-                I’ve built my website with Startup just in one day, and it was
-                ready-to-go.
-              </p>
-              <span>Allan Kim</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Happy Clients End -->
-
-    <!-- Call To Action Start -->
-
-    <div id="callToAction">
-      <div class="container">
-        <h5>Easy to setup. Easy to maintain</h5>
+  <!-- Login Form Start -->
+  <div id="login">
+    <div class="container">
+      <div class="text-section">
+        <h2>We solve digital problems with an outstanding creative flare</h2>
         <p>
-          Bootstrap is a widely-used, sleek, intuitive and powerful front-end
-          framework for faster and easier web development.
+          We have created a new product that will help designers, developers
+          and companies create websites for their startups quickly and easily.
         </p>
-        <div class="buttons">
-          <a class="play"></a>
-          <a class="getStarted">Get Started</a>
-        </div>
       </div>
-    </div>
-
-    <!-- Call To Action End -->
-
-    <!-- Show Case Start -->
-
-    <div id="showCase">
-      <div class="container">
-        <div class="heading">
-          <h5>Last Works</h5>
-          <a class="allWorks">View All Works</a>
-        </div>
-        <div class="work-cases">
-          <div class="work-single-case">
-            <img src="./assets/images/last-work1.png" />
-            <p class="category">UI KIT</p>
-            <p class="title">Mozart Project</p>
+      <div class="form-section">
+        <div class="form">
+          <div class="tabs">
+            <div class="tab" onclick="form('left', 'register')">Sign up</div>
+            <div class="tab" onclick="form('right', 'login-form')">Login</div>
+            <div class="border"></div>
           </div>
-          <div class="work-single-case">
-            <img src="./assets/images/last-work2.png" />
-            <p class="category">framework</p>
-            <p class="title">Startup Framework 2.0</p>
+          <div class="form-container show" id="register">
+            <form>
+              <input type="text" name="" id="" placeholder="Your email" />
+              <input type="text" name="" id="" placeholder="Your Password" />
+              <button class="main-btn">Create An Account</button>
+              <div class="divider">
+                <span class="line"></span>
+                <span>or</span>
+                <span class="line"></span>
+              </div>
+              <a class="second-btn">Register via Twitter</a>
+            </form>
           </div>
-          <div class="work-single-case">
-            <img src="./assets/images/last-work3.png" />
-            <p class="category">photos</p>
-            <p class="title">From The Sky</p>
-          </div>
-          <div class="work-single-case">
-            <img src="./assets/images/last-work4.png" />
-            <p class="category">pictures</p>
-            <p class="title">Air Forces</p>
+          <div class="form-container" id="login-form">
+            <form>
+              <input type="text" name="" id="" placeholder="Your email" />
+              <input type="text" name="" id="" placeholder="Your Password" />
+              <button class="main-btn">Login To Account</button>
+              <div class="divider">
+                <span class="line"></span>
+                <span>or</span>
+                <span class="line"></span>
+              </div>
+              <a class="second-btn">Login via Twitter</a>
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Login Form End -->
 
-    <!-- Show Case End -->
-
-    <!-- Teams Start -->
-
-    <div id="teams">
-      <div class="container">
-        <div class="heading">
-          <h5>Startup Crew</h5>
-          <p>
-            The most important part of the Startup Framework is the samples. The
-            samples form a set of 25 usable pages you can use as is or you can
-            add new blocks from UI Kit.
-          </p>
+  <!-- Happy Clients Start -->
+  <div id="happyClients">
+    <div class="container">
+      <h4>Our Happy Clients</h4>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="icon">
+            <span style="background-image: url('./assets/images/Mask.png')"></span>
+          </div>
+          <div class="content">
+            <p>
+              Get a fully retina ready site when you build with Startup
+              Framework. Websites look sharper and more gorgeous on devices
+              with retina display support
+            </p>
+            <span>Rayhan Curran</span>
+          </div>
         </div>
-        <div class="cards">
-          <div class="card">
-            <img class="profile" src="./assets/images/team1.svg" />
-            <p class="name">Leah Salomon</p>
-            <p class="position">UI Designer</p>
-            <div class="social">
-              <a><img src="./assets/images/fa-twitter.png"/></a>
-              <a><img src="./assets/images/fa-facebook-square.png"/></a>
-              <a><img src="./assets/images/fa-dribbble.png"/></a>
-              <a><img src="./assets/images/fa-instagram.png"/></a>
-            </div>
+        <div class="testimonial">
+          <div class="icon">
+            <span style="background: url('./assets/images/Mask2.png')"></span>
           </div>
-          <div class="card">
-            <img class="profile" src="./assets/images/team2.png" />
-            <p class="name">Leah Salomon</p>
-            <p class="position">UI Designer</p>
-            <div class="social">
-              <a><img src="./assets/images/fa-twitter.png"/></a>
-              <a><img src="./assets/images/fa-facebook-square.png"/></a>
-              <a><img src="./assets/images/fa-dribbble.png"/></a>
-              <a><img src="./assets/images/fa-instagram.png"/></a>
-            </div>
+          <div class="content">
+            <p>
+              As a business targeting high net worth individuals, we were
+              looking for a slick, cool and mini-malistic design for our
+              website
+            </p>
+            <span>Kayley Frame</span>
           </div>
-          <div class="card">
-            <img class="profile" src="./assets/images/team3.svg" />
-            <p class="name">Leah Salomon</p>
-            <p class="position">UI Designer</p>
-            <div class="social">
-              <a><img src="./assets/images/fa-twitter.png"/></a>
-              <a><img src="./assets/images/fa-facebook-square.png"/></a>
-              <a><img src="./assets/images/fa-dribbble.png"/></a>
-              <a><img src="./assets/images/fa-instagram.png"/></a>
-            </div>
+        </div>
+        <div class="testimonial">
+          <div class="icon">
+            <span style="background: url('./assets/images/Mask3.png')"></span>
           </div>
-          <div class="card">
-            <img class="profile" src="./assets/images/team4.svg" />
-            <p class="name">Leah Salomon</p>
-            <p class="position">UI Designer</p>
-            <div class="social">
-              <a><img src="./assets/images/fa-twitter.png"/></a>
-              <a><img src="./assets/images/fa-facebook-square.png"/></a>
-              <a><img src="./assets/images/fa-dribbble.png"/></a>
-              <a><img src="./assets/images/fa-instagram.png"/></a>
-            </div>
+          <div class="content">
+            <p>
+              The most important part of the Startup Framework is the samples
+            </p>
+            <span>Gene Whitfield</span>
           </div>
-          <div class="card">
-            <img class="profile" src="./assets/images/team5.svg" />
-            <p class="name">Leah Salomon</p>
-            <p class="position">UI Designer</p>
-            <div class="social">
-              <a><img src="./assets/images/fa-twitter.png"/></a>
-              <a><img src="./assets/images/fa-facebook-square.png"/></a>
-              <a><img src="./assets/images/fa-dribbble.png"/></a>
-              <a><img src="./assets/images/fa-instagram.png"/></a>
-            </div>
+        </div>
+        <div class="testimonial">
+          <div class="icon">
+            <span style="background: url('./assets/images/Mask4.png')"></span>
+          </div>
+          <div class="content">
+            <p>
+              I’ve built my website with Startup just in one day, and it was
+              ready-to-go.
+            </p>
+            <span>Allan Kim</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Happy Clients End -->
 
-    <!-- Teams End -->
+  <!-- Call To Action Start -->
 
-    <script src="./assets/javascript/slider.js"></script>
-    <script src="./assets/javascript/vertical-slider.js"></script>
-    <script src="./assets/javascript/form.js"></script>
-  </body>
+  <div id="callToAction">
+    <div class="container">
+      <h5>Easy to setup. Easy to maintain</h5>
+      <p>
+        Bootstrap is a widely-used, sleek, intuitive and powerful front-end
+        framework for faster and easier web development.
+      </p>
+      <div class="buttons">
+        <a class="play"></a>
+        <a class="getStarted">Get Started</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call To Action End -->
+
+  <!-- Show Case Start -->
+
+  <div id="showCase">
+    <div class="container">
+      <div class="heading">
+        <h5>Last Works</h5>
+        <a class="allWorks">View All Works</a>
+      </div>
+      <div class="work-cases">
+        <div class="work-single-case">
+          <img src="./assets/images/last-work1.png" />
+          <p class="category">UI KIT</p>
+          <p class="title">Mozart Project</p>
+        </div>
+        <div class="work-single-case">
+          <img src="./assets/images/last-work2.png" />
+          <p class="category">framework</p>
+          <p class="title">Startup Framework 2.0</p>
+        </div>
+        <div class="work-single-case">
+          <img src="./assets/images/last-work3.png" />
+          <p class="category">photos</p>
+          <p class="title">From The Sky</p>
+        </div>
+        <div class="work-single-case">
+          <img src="./assets/images/last-work4.png" />
+          <p class="category">pictures</p>
+          <p class="title">Air Forces</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show Case End -->
+
+  <!-- Teams Start -->
+
+  <div id="teams">
+    <div class="container">
+      <div class="heading">
+        <h5>Startup Crew</h5>
+        <p>
+          The most important part of the Startup Framework is the samples. The
+          samples form a set of 25 usable pages you can use as is or you can
+          add new blocks from UI Kit.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img class="profile" src="./assets/images/team1.svg" />
+          <p class="name">Leah Salomon</p>
+          <p class="position">UI Designer</p>
+          <div class="social">
+            <a><img src="./assets/images/fa-twitter.png" /></a>
+            <a><img src="./assets/images/fa-facebook-square.png" /></a>
+            <a><img src="./assets/images/fa-dribbble.png" /></a>
+            <a><img src="./assets/images/fa-instagram.png" /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="profile" src="./assets/images/team2.png" />
+          <p class="name">Leah Salomon</p>
+          <p class="position">UI Designer</p>
+          <div class="social">
+            <a><img src="./assets/images/fa-twitter.png" /></a>
+            <a><img src="./assets/images/fa-facebook-square.png" /></a>
+            <a><img src="./assets/images/fa-dribbble.png" /></a>
+            <a><img src="./assets/images/fa-instagram.png" /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="profile" src="./assets/images/team3.svg" />
+          <p class="name">Leah Salomon</p>
+          <p class="position">UI Designer</p>
+          <div class="social">
+            <a><img src="./assets/images/fa-twitter.png" /></a>
+            <a><img src="./assets/images/fa-facebook-square.png" /></a>
+            <a><img src="./assets/images/fa-dribbble.png" /></a>
+            <a><img src="./assets/images/fa-instagram.png" /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="profile" src="./assets/images/team4.svg" />
+          <p class="name">Leah Salomon</p>
+          <p class="position">UI Designer</p>
+          <div class="social">
+            <a><img src="./assets/images/fa-twitter.png" /></a>
+            <a><img src="./assets/images/fa-facebook-square.png" /></a>
+            <a><img src="./assets/images/fa-dribbble.png" /></a>
+            <a><img src="./assets/images/fa-instagram.png" /></a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="profile" src="./assets/images/team5.svg" />
+          <p class="name">Leah Salomon</p>
+          <p class="position">UI Designer</p>
+          <div class="social">
+            <a><img src="./assets/images/fa-twitter.png" /></a>
+            <a><img src="./assets/images/fa-facebook-square.png" /></a>
+            <a><img src="./assets/images/fa-dribbble.png" /></a>
+            <a><img src="./assets/images/fa-instagram.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Teams End -->
+
+  <!-- Contact Start -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="section-1">
+        <h5>Let’s Keep in Touch</h5>
+        <p>
+          We have created a new product that will help designers, developers
+          and companies create websites for their startups quickly and easily.
+        </p>
+        <span class="phone"><a href="tel:+15555055050">+1 555 505 5050</a></span>
+        <span class="email"><a href="mailto:info@designmodo.com">info@designmodo.com</a></span>
+        <span class="address">
+          San Francisco, CA560 Bush St & 20th Ave, Apt5 San Francisco, 230909
+        </span>
+      </div>
+      <div class="section-2">
+        <form>
+          <div class="inputs-group">
+            <div class="yourname">
+              <label for="yourname">your name</label>
+              <input id="yourname" type="text" placeholder="First name" />
+            </div>
+            <div class="budget">
+              <label for="budget">budget</label>
+              <select id="budget" type="text">
+                <option selected value="500">$500</option>
+                <option value="750">$750</option>
+                <option value="1000">$1000</option>
+                <option value="1500">$1500</option>
+              </select>
+            </div>
+            <div class="email">
+              <label for="email">email</label>
+              <input id="email" type="email" placeholder="name@mail.com" />
+            </div>
+            <div class="message">
+              <label for="message">message</label>
+              <textarea id="message" placeholder="Message" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="submit">
+            <div class="checkbox-group">
+              <input id="sendCopy" type="checkbox" />
+              <label for="sendCopy">Send me a copy</label>
+            </div>
+            <button class="primary-btn">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact End -->
+
+  <!-- Pricing Start -->
+
+  <div id="pricing">
+    <div class="container">
+
+      <h5>Plans & Pricing</h5>
+      <p class="text">
+        Startup Framework is free forever — you only pay for custom domain
+        hosting or to export your site.
+      </p>
+
+      <div id="price-cards">
+
+        <div class="price-card">
+          <h6>Starter</h6>
+          <p class="price">9.99<sup>$</sup></p>
+          <div class="features">
+            <span>2 GB of space</span>
+            <span>14 days of backups</span>
+            <span>Social integrations</span>
+            <span>Client billing</span>
+            <span class="uncheck">Remote access</span>
+            <span class="uncheck">Customer domain</span>
+            <span class="uncheck">24 hours support</span>
+            <span class="uncheck">Admin tools</span>
+            <span class="uncheck">collaboration</span>
+            <span class="uncheck">User management</span>
+          </div>
+          <a href="#" class="get-started">Get Started</a>
+        </div>
+
+        <div class="price-card">
+          <h6>Professional</h6>
+          <p class="price">19.99<sup>$</sup></p>
+          <div class="features">
+            <span>2 GB of space</span>
+            <span>14 days of backups</span>
+            <span>Social integrations</span>
+            <span>Client billing</span>
+            <span>Remote access</span>
+            <span>Customer domain</span>
+            <span>24 hours support</span>
+            <span class="uncheck">Admin tools</span>
+            <span class="uncheck">collaboration</span>
+            <span class="uncheck">User management</span>
+          </div>
+          <a href="#" class="get-started active">Get Started</a>
+        </div>
+
+        <div class="price-card">
+          <h6>Team</h6>
+          <p class="price">49.99<sup>$</sup></p>
+          <div class="features">
+            <span>2 GB of space</span>
+            <span>14 days of backups</span>
+            <span>Social integrations</span>
+            <span>Client billing</span>
+            <span>Remote access</span>
+            <span>Customer domain</span>
+            <span>24 hours support</span>
+            <span>Admin tools</span>
+            <span>collaboration</span>
+            <span>User management</span>
+          </div>
+          <a href="#" class="get-started">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing End -->
+
+  <script src="./assets/javascript/slider.js"></script>
+  <script src="./assets/javascript/vertical-slider.js"></script>
+  <script src="./assets/javascript/form.js"></script>
+</body>
+
 </html>
