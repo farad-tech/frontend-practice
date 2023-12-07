@@ -7,6 +7,8 @@ I`m not using any framework or library so It should be very fast on loading in i
 
 It took 15 hours to develop this page.
 
+This page is designed only for desktop! If you interested, please expand that for mobile responsive design and pull it.
+
 Thankyou.
 
 *by Farhad Karami https://farhadkarami.ir https://github.com/farad-tech*
