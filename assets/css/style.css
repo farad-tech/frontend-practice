@@ -1130,12 +1130,12 @@ header {
   margin-bottom: 26px;
 }
 
-.price-card .get-started:hover{
+.price-card .get-started:hover {
   border: 2px #E93A7D solid !important;
   background-color: #E93A7D !important;
 }
 
-.price-card .active{
+.price-card .active {
   border: 2px #E93A7D solid !important;
   background-color: #E93A7D !important;
 }
@@ -1145,9 +1145,82 @@ header {
   background-color: #b6245c !important;
 }
 
-
-
 /* End Pricing */
+
+/* Start Footer */
+
+footer {
+  color: white;
+}
+
+footer .upper-section {
+  padding-top: 54px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
+
+footer .upper-section h6 {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.293px;
+  margin: 0;
+}
+
+footer .upper-section a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: white;
+  margin-left: 27px;
+}
+
+footer hr {
+  width: 75%;
+  margin: auto;
+  opacity: 0.3;
+}
+
+footer .lower-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  padding-top: 47px;
+  padding-bottom: 40px;
+}
+
+footer .lower-section a {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-right: 29px;
+  text-decoration: none;
+}
+
+footer .copy-right {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+footer .copy-right a{
+  margin: 0;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
 
 /* Animations */
 @keyframes fadeShow {
