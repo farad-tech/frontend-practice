@@ -1,8 +1,9 @@
-/*
-*Code by:Farhad Karami 
-*https://farhadkarami.ir 
-*https://github.com/farad-tech 
-*/
+@font-face {
+  font-family: 'DMSans';
+  src: url('../fonts/DMSans/DMSans-Light.ttf');
+  font-weight: 400
+}
+
 @font-face {
   font-family: 'DMSans';
   src: url('../fonts/DMSans/DMSans-Regular.ttf');
@@ -98,7 +99,7 @@ label {
 
 header {
   min-height: 100vh;
-  background: url("../images/header-bg.jpg");
+  background: url("../images/header.webp");
   background-repeat: no-repeat;
   background-size: cover
 }
@@ -110,11 +111,11 @@ header {
 }
 
 .header-menu #dribbble::after {
-  content: url('../images/fa-dribbble.png')
+  content: url('../images/fa-dribbble.webp')
 }
 
 .header-menu #behance::after {
-  content: url('../images/fa-behance.png')
+  content: url('../images/fa-behance.webp')
 }
 
 .header-menu {
@@ -173,7 +174,7 @@ header {
 }
 
 .slider .dots span::after {
-  content: url("../images/fa-circle-o.png")
+  content: url("../images/fa-circle-o.webp")
 }
 
 .slider .dots span:hover {
@@ -181,7 +182,7 @@ header {
 }
 
 .slider .dots span.active::after {
-  content: url("../images/fa-circle.png");
+  content: url("../images/fa-circle.webp");
   animation: fadeShow var(--fadeShowTime) ease-in-out
 }
 
@@ -196,7 +197,7 @@ header {
 }
 
 .slider .left span::after {
-  content: url("../images/fa-angle-left.png")
+  content: url("../images/fa-angle-left.webp")
 }
 
 .slider .right {
@@ -210,7 +211,7 @@ header {
 }
 
 .slider .right span::after {
-  content: url("../images/fa-angle-right.png")
+  content: url("../images/fa-angle-right.webp")
 }
 
 .slider .left:hover,
@@ -255,7 +256,7 @@ header {
 
 #content {
   min-height: 63vh;
-  background: url("../images/content.jpg");
+  background: url("../images/sample.webp");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -291,7 +292,7 @@ header {
 
 #vertical-slider {
   min-height: 100vh;
-  background: url("../images/vertical-slider.jpg");
+  background: url("../images/features.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -318,7 +319,7 @@ header {
 }
 
 #vertical-slider .dots span::after {
-  content: url("../images/fa-circle-o.png")
+  content: url("../images/fa-circle-o.webp")
 }
 
 #vertical-slider .dots span:hover {
@@ -326,7 +327,7 @@ header {
 }
 
 #vertical-slider .dots span.active::after {
-  content: url("../images/fa-circle.png");
+  content: url("../images/fa-circle.webp");
   animation: fadeShow var(--fadeShowTime) ease-in-out
 }
 
@@ -385,11 +386,11 @@ header {
 }
 
 .vertical-slider-container .section-2 .icon-1 .icon::before {
-  content: url("../images/fa-commenting-o.png")
+  content: url("../images/fa-commenting-o.webp")
 }
 
 .vertical-slider-container .section-2 .icon-2 .icon::before {
-  content: url("../images/fa-dimond.png")
+  content: url("../images/fa-dimond.webp")
 }
 
 .vertical-slider-container .section-2 .icon-1 {
@@ -428,7 +429,7 @@ header {
 
 #login {
   min-height: 100vh;
-  background: url('../images/login.jpg');
+  background: url('../images/login.webp');
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
@@ -660,7 +661,7 @@ header {
 
 #callToAction {
   min-height: 76vh;
-  background: url('../images/callToAction.jpg');
+  background: url('../images/get-started.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -707,7 +708,7 @@ header {
 }
 
 #callToAction .container .buttons .play::before {
-  content: url('../images/play.jpg');
+  content: url('../images/play.webp');
   vertical-align: -130%
 }
 
@@ -854,7 +855,7 @@ header {
 #contact {
   color: white;
   min-height: 100vh;
-  background-image: url('../images/contact-bg.jpg');
+  background: url('../images/contact.webp');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover
@@ -896,17 +897,17 @@ header {
 }
 
 #contact .section-1 .phone::before {
-  content: url('../images/fa-phone.png');
+  content: url('../images/fa-phone.webp');
   margin-right: 15px
 }
 
 #contact .section-1 .email::before {
-  content: url('../images/fa-envelope.png');
+  content: url('../images/fa-envelope.webp');
   margin-right: 15px
 }
 
 #contact .section-1 .address::before {
-  content: url('../images/fa-building-o.png');
+  content: url('../images/fa-building-o.webp');
   margin-right: 15px
 }
 
@@ -977,7 +978,7 @@ header {
 
 #pricing {
   min-height: 100vh;
-  background-image: url('../images/bg-pricing.jpg');
+  background: url('../images/bg-pricing.webp');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1061,7 +1062,7 @@ header {
 }
 
 .price-card .features span::before {
-  content: url('../images/check-Icon.png');
+  content: url('../images/check-Icon.webp');
   width: 12px;
   height: auto;
   margin-right: 15px
