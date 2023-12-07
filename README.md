@@ -7,8 +7,6 @@ I`m not using any framework or library so It should be very fast on loading in i
 
 It took 15 hours to develop this page.
 
-**Coding this page is not completed yet!** It will soon.
-
 Thankyou.
 
 *by Farhad Karami https://farhadkarami.ir https://github.com/farad-tech*
