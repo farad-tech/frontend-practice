@@ -1,19 +1,24 @@
+/*
+*Code by:Farhad Karami 
+*https://farhadkarami.ir 
+*https://github.com/farad-tech 
+*/
 @font-face {
   font-family: 'DMSans';
   src: url('../fonts/DMSans/DMSans-Regular.ttf');
-  font-weight: normal;
+  font-weight: normal
 }
 
 @font-face {
   font-family: 'DMSans';
   src: url('../fonts/DMSans/DMSans-Bold.ttf');
-  font-weight: 700;
+  font-weight: 700
 }
 
 :root {
   --fadeShowTime: 1500ms;
   --fadeDownTime: 1500ms;
-  --fadeLeftTime: 300ms;
+  --fadeLeftTime: 300ms
 }
 
 * {
@@ -21,16 +26,16 @@
   font-family: DMSans;
   transition: all 200ms ease-in-out;
   user-select: none;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none
 }
 
 body {
   margin: 0;
-  background-color: #2F1893;
+  background-color: #2F1893
 }
 
 input:not(input[type=checkbox]),
@@ -46,33 +51,33 @@ textarea {
   margin-bottom: 30px;
   color: #1E0E62;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500
 }
 
 textarea {
   border-radius: 10px !important;
-  height: auto;
+  height: auto
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  outline: #cacaca solid 1px !important;
+  outline: #cacaca solid 1px !important
 }
 
 select {
-  cursor: pointer;
+  cursor: pointer
 }
 
 input[type=checkbox] {
   height: 20px;
   width: 20px;
   cursor: pointer;
-  accent-color: #25DAC5 !important;
+  accent-color: #25DAC5 !important
 }
 
 label {
-  cursor: pointer;
+  cursor: pointer
 }
 
 .primary-btn {
@@ -84,37 +89,36 @@ label {
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .primary-btn:hover {
-  background-color: #19c2ae;
+  background-color: #19c2ae
 }
 
-/* Header */
 header {
   min-height: 100vh;
-  background: url("../images/header-bg.png");
+  background: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover
 }
 
 .header-menu {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 .header-menu #dribbble::after {
-  content: url('../images/fa-dribbble.png');
+  content: url('../images/fa-dribbble.png')
 }
 
 .header-menu #behance::after {
-  content: url('../images/fa-behance.png');
+  content: url('../images/fa-behance.png')
 }
 
 .header-menu {
-  padding-top: 84px;
+  padding-top: 84px
 }
 
 .header-menu a {
@@ -124,12 +128,12 @@ header {
   font-weight: 500;
   line-height: 26px;
   word-wrap: break-word;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .header-menu a:hover,
 .header-menu .active {
-  opacity: 30%;
+  opacity: 30%
 }
 
 .slider {
@@ -138,47 +142,47 @@ header {
   height: 40vh;
   text-align: center;
   color: white;
-  animation: fadeShow var(--fadeShowTime) ease-in-out;
+  animation: fadeShow var(--fadeShowTime) ease-in-out
 }
 
 .slider .slide .sub-title {
   font-weight: 700;
   font-size: 24px;
-  display: inline;
+  display: inline
 }
 
 .slider .slide .title {
   font-weight: 700;
   margin: 25px auto !important;
-  font-size: 72px;
+  font-size: 72px
 }
 
 .slider .slide .text {
   font-size: 22px;
   font-weight: 500;
   width: 60%;
-  margin: auto;
+  margin: auto
 }
 
 .slider .dots {
-  margin: 40px auto;
+  margin: 40px auto
 }
 
 .slider .dots span {
-  cursor: pointer;
+  cursor: pointer
 }
 
 .slider .dots span::after {
-  content: url("../images/fa-circle-o.png");
+  content: url("../images/fa-circle-o.png")
 }
 
 .slider .dots span:hover {
-  opacity: 30%;
+  opacity: 30%
 }
 
 .slider .dots span.active::after {
   content: url("../images/fa-circle.png");
-  animation: fadeShow var(--fadeShowTime) ease-in-out;
+  animation: fadeShow var(--fadeShowTime) ease-in-out
 }
 
 .slider .left {
@@ -188,11 +192,11 @@ header {
   display: flex;
   align-items: center;
   padding: 30px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .slider .left span::after {
-  content: url("../images/fa-angle-left.png");
+  content: url("../images/fa-angle-left.png")
 }
 
 .slider .right {
@@ -202,38 +206,38 @@ header {
   display: flex;
   align-items: center;
   padding: 30px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .slider .right span::after {
-  content: url("../images/fa-angle-right.png");
+  content: url("../images/fa-angle-right.png")
 }
 
 .slider .left:hover,
 .slider .right:hover {
-  opacity: 30%;
+  opacity: 30%
 }
 
 .slides-container {
   display: flex;
   overflow-y: auto;
   width: 80%;
-  margin: auto;
+  margin: auto
 }
 
 .slider .slide {
-  display: none;
+  display: none
 }
 
 .slider .slide.active {
   animation: fadeShow var(--fadeShowTime) ease-in-out;
-  display: block;
+  display: block
 }
 
 .call-to-action-container {
   margin-top: 80px;
   text-align: center;
-  animation: fadeUp var(--fadeShowTime) ease-in-out;
+  animation: fadeUp var(--fadeShowTime) ease-in-out
 }
 
 .call-to-action {
@@ -242,30 +246,26 @@ header {
   font-size: 18px;
   border-radius: 100px;
   padding: 17px 35px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .call-to-action:hover {
-  background-color: #3c1fdb;
+  background-color: #3c1fdb
 }
-
-/* End Header */
-
-/* Content */
 
 #content {
   min-height: 63vh;
-  background: url("../images/content.png");
+  background: url("../images/content.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 #content .content-place-holder {
-  width: 66.66666%;
+  width: 66.66666%
 }
 
 #content .tiny-title {
@@ -274,33 +274,28 @@ header {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2px
 }
 
 #content h1 {
   color: white;
   font-size: 58px;
-  font-weight: 700;
+  font-weight: 700
 }
 
 #content .text {
   color: white;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500
 }
-
-/* End Content */
-
-
-/* Start Vertical slider */
 
 #vertical-slider {
   min-height: 100vh;
-  background: url("../images/vertical-slider.png");
+  background: url("../images/vertical-slider.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
+  align-items: center
 }
 
 .vertical-slider-container {
@@ -308,103 +303,102 @@ header {
   align-items: center;
   flex-direction: row-reverse;
   width: 100%;
-  padding: 115px;
+  padding: 115px
 }
 
 #vertical-slider .dots {
   margin: 40px 0;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: end
 }
 
 #vertical-slider .dots span {
-  cursor: pointer;
+  cursor: pointer
 }
 
 #vertical-slider .dots span::after {
-  content: url("../images/fa-circle-o.png");
+  content: url("../images/fa-circle-o.png")
 }
 
 #vertical-slider .dots span:hover {
-  opacity: 30%;
+  opacity: 30%
 }
 
 #vertical-slider .dots span.active::after {
   content: url("../images/fa-circle.png");
-  animation: fadeShow var(--fadeShowTime) ease-in-out;
+  animation: fadeShow var(--fadeShowTime) ease-in-out
 }
 
 .vertical-slider-container .slides {
-  width: 91.7%;
+  width: 91.7%
 }
 
 .vertical-slider-container .slide,
 .vertical-slider-container .slide-vertical {
-  width: 100%;
+  width: 100%
 }
 
 .vertical-slider-container .slide-vertical {
   display: flex;
-  width: 100%;
+  width: 100%
 }
 
 .vertical-slider-container .section-1 {
   width: 36%;
-  position: relative;
+  position: relative
 }
 
 .vertical-slider-container .section-1 img {
   position: absolute;
   right: 214px;
   height: 100%;
-  width: 100%;
+  width: 100%
 }
 
 .vertical-slider-container .section-2 {
   width: 54%;
-  color: white;
+  color: white
 }
 
 .vertical-slider-container .section-2 h3 {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 700
 }
 
 .vertical-slider-container .section-2 .main-text {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 500
 }
 
 .vertical-slider-container .section-2 .icons-section {
   width: 100%;
-  display: flex;
+  display: flex
 }
 
 .vertical-slider-container .section-2 .icon-1 {
-  width: 50%;
+  width: 50%
 }
 
 .vertical-slider-container .section-2 .icon-2 {
-  width: 50%;
+  width: 50%
 }
 
 .vertical-slider-container .section-2 .icon-1 .icon::before {
-  content: url("../images/fa-commenting-o.png");
+  content: url("../images/fa-commenting-o.png")
 }
 
 .vertical-slider-container .section-2 .icon-2 .icon::before {
-  content: url("../images/fa-dimond.png");
+  content: url("../images/fa-dimond.png")
 }
 
 .vertical-slider-container .section-2 .icon-1 {
-  padding-top: 60px;
+  padding-top: 60px
 }
 
 .vertical-slider-container .section-2 .icon-2 {
-  padding-top: 60px;
+  padding-top: 60px
 }
-
 
 .vertical-slider-container .section-2 .icon-1 .title,
 .vertical-slider-container .section-2 .icon-2 .title {
@@ -412,7 +406,7 @@ header {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2px
 }
 
 .vertical-slider-container .section-2 .icon-1 .text,
@@ -420,29 +414,25 @@ header {
   padding-top: 16.2px;
   font-size: 16px;
   font-weight: 400;
-  padding-right: 35px;
+  padding-right: 35px
 }
 
 .slide-vertical {
-  display: none !important;
+  display: none !important
 }
 
 .active-slide-vertical {
   display: flex !important;
-  animation: fadeDown var(--fadeDownTime) ease-in-out;
+  animation: fadeDown var(--fadeDownTime) ease-in-out
 }
-
-/* End Vertical Slider */
-
-/* Start Login Form */
 
 #login {
   min-height: 100vh;
-  background: url('../images/login.png');
+  background: url('../images/login.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-  width: 100%;
+  width: 100%
 }
 
 #login .container {
@@ -451,28 +441,28 @@ header {
   width: 83.3333%;
   align-items: center;
   justify-content: space-around;
-  min-height: 100vh;
+  min-height: 100vh
 }
 
 #login .text-section {
   color: white;
-  width: 40%;
+  width: 40%
 }
 
 #login .text-section h2 {
   font-size: 42px;
   font-weight: 700;
-  width: 80%;
+  width: 80%
 }
 
 #login .text-section p {
   font-size: 16px;
   font-weight: 400;
-  width: 80%;
+  width: 80%
 }
 
 #login .form-section {
-  width: 50%;
+  width: 50%
 }
 
 #login .form-section .form {
@@ -480,7 +470,7 @@ header {
   border-radius: 15px;
   width: 80%;
   padding-bottom: 80px;
-  overflow: hidden;
+  overflow: hidden
 }
 
 #login .form-section .tabs {
@@ -491,18 +481,18 @@ header {
   letter-spacing: 2px;
   display: flex;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 60px
 }
 
 #login .form-section .tab {
   width: 50%;
   padding: 24px;
   text-align: center;
-  cursor: pointer;
+  cursor: pointer
 }
 
 #login .form-section .tab:hover {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, .03)
 }
 
 #login .form-section .tabs .border {
@@ -512,25 +502,25 @@ header {
   width: 50%;
   height: 2px;
   position: absolute;
-  bottom: 0;
+  bottom: 0
 }
 
 #login .form-section .tabs .border.left {
-  transform: translateX(0%);
+  transform: translateX(0%)
 }
 
 #login .form-section .tabs .border.right {
-  transform: translateX(100%);
+  transform: translateX(100%)
 }
 
 #login .form-container {
   width: 60%;
   margin: auto;
-  display: none;
+  display: none
 }
 
 .show {
-  display: block !important;
+  display: block !important
 }
 
 #login .main-btn {
@@ -544,11 +534,11 @@ header {
   cursor: pointer;
   color: white;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500
 }
 
 #login .main-btn:hover {
-  background-color: #1fc6b2;
+  background-color: #1fc6b2
 }
 
 #login .divider {
@@ -560,14 +550,14 @@ header {
   color: #a3a3a3;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 22px
 }
 
 #login .divider .line {
   display: block;
   width: 40%;
   height: 1px;
-  background-color: #cacaca;
+  background-color: #cacaca
 }
 
 #login .second-btn {
@@ -581,32 +571,28 @@ header {
   cursor: pointer;
   color: white;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500
 }
 
 #login .second-btn:hover {
-  background-color: #1489d2;
+  background-color: #1489d2
 }
 
 .fade-left {
-  animation: fadeLeft var(--fadeLeftTime) ease-in-out;
+  animation: fadeLeft var(--fadeLeftTime) ease-in-out
 }
 
 .fade-right {
-  animation: fadeRight var(--fadeLeftTime) ease-in-out;
+  animation: fadeRight var(--fadeLeftTime) ease-in-out
 }
 
 .fade-down {
-  animation: fadeDown var(--fadeLeftTime) ease-in-out;
+  animation: fadeDown var(--fadeLeftTime) ease-in-out
 }
-
-/* End Login Form */
-
-/* Start Happy Clients */
 
 #happyClients {
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding-bottom: 60px
 }
 
 #happyClients .container {
@@ -614,51 +600,51 @@ header {
   margin: auto;
   width: 73.333%;
   min-height: 100vh;
-  color: white;
+  color: white
 }
 
 #happyClients .container h4 {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 700
 }
 
 .testimonials {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
+  margin: auto
 }
 
 #happyClients .container .testimonial {
   width: 48%;
   min-height: 237px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   border-radius: 10px;
-  border: 2px rgba(255, 255, 255, 0.115) solid;
+  border: 2px rgba(255, 255, 255, .115) solid;
   padding: 35px 28px;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 #happyClients .container .testimonial .icon span {
   height: 70px;
   width: 70px;
   display: block;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 #happyClients .container .testimonial .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 #happyClients .container .testimonial .content p {
   font-size: 18px;
   font-weight: 500;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 30px
 }
 
 #happyClients .container .testimonial .content span {
@@ -669,25 +655,22 @@ header {
   letter-spacing: 2px;
   margin-top: 15px;
   display: block;
-  opacity: 30%;
+  opacity: 30%
 }
 
-/* End Happy Clients */
-
-/* Start Call To Action */
 #callToAction {
   min-height: 76vh;
-  background: url('../images/callToAction.png');
+  background: url('../images/callToAction.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   color: white;
-  text-align: center;
+  text-align: center
 }
 
 #callToAction .container {
   margin: auto;
-  width: 35%;
+  width: 35%
 }
 
 #callToAction .container h5 {
@@ -695,20 +678,20 @@ header {
   font-weight: 700;
   padding-top: 80px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 #callToAction .container p {
   font-size: 22px;
   font-weight: 500;
-  margin: 0;
+  margin: 0
 }
 
 #callToAction .container .buttons {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  align-items: center;
+  align-items: center
 }
 
 #callToAction .container .buttons .play {
@@ -716,16 +699,16 @@ header {
   height: 70px;
   background-color: #EA3223;
   border-radius: 100px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 #callToAction .container .buttons .play:hover {
-  background-color: #cd2e1f;
+  background-color: #cd2e1f
 }
 
 #callToAction .container .buttons .play::before {
-  content: url('../images/play.png');
-  vertical-align: -130%;
+  content: url('../images/play.jpg');
+  vertical-align: -130%
 }
 
 #callToAction .container .buttons .getStarted {
@@ -737,67 +720,63 @@ header {
   padding-left: 50px !important;
   border-radius: 100px;
   margin-left: 30px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 #callToAction .container .buttons .getStarted:hover {
-  background-color: #159f8f;
+  background-color: #159f8f
 }
-
-/* End Call To Action */
-
-/* Start Show Case */
 
 #showCase {
   min-height: 100vh;
-  padding-top: 20px;
+  padding-top: 20px
 }
 
 #showCase .container {
   width: 75%;
   margin: auto;
-  color: white;
+  color: white
 }
 
 #showCase .heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 #showCase .heading h5 {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 700
 }
 
 #showCase .heading .allWorks {
   font-size: 18px;
   font-weight: 500;
-  border: 2px rgba(255, 255, 255, 0.3) solid;
+  border: 2px rgba(255, 255, 255, .3) solid;
   padding: 11px 24px;
   border-radius: 100px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 #showCase .heading .allWorks:hover {
-  border: 2px rgba(255, 255, 255, 0.8) solid;
+  border: 2px rgba(255, 255, 255, .8) solid
 }
 
 #showCase .work-cases {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 #showCase .work-single-case {
   width: 48%;
   text-align: center;
-  margin-bottom: 74px;
+  margin-bottom: 74px
 }
 
 #showCase .work-single-case img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 #showCase .work-single-case .category {
@@ -806,88 +785,79 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 30px;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 #showCase .work-single-case .title {
   font-size: 22px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 10px
 }
 
-/* End Show Case */
-
-/* Start Teams */
 #teams {
   min-height: 100vh;
   padding-top: 20px;
   width: 75%;
   margin: auto;
-  padding-bottom: 70px;
+  padding-bottom: 70px
 }
 
 #teams .container {
   width: 69%;
-  color: white;
+  color: white
 }
 
 #teams .heading h5 {
   font-size: 42px;
   font-weight: 700;
-  margin: 0;
+  margin: 0
 }
-
 
 #teams .cards {
   margin-top: 70px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 #teams .cards .card {
   width: 33%;
-  margin-bottom: 70px;
+  margin-bottom: 70px
 }
 
 #teams .card .profile {
   width: 100px;
   height: 100px;
-  border-radius: 100px;
+  border-radius: 100px
 }
 
 #teams .card .name {
   font-size: 22px;
   font-weight: 500;
   margin-top: 17px;
-  margin-bottom: 4px;
+  margin-bottom: 4px
 }
 
 #teams .card .position {
   font-size: 22px;
   font-weight: 500;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400
 }
 
 #teams .card .social a {
   margin-right: 20px;
-  cursor: pointer;
+  cursor: pointer
 }
-
-/* End Teams */
-
-
-/* Start Contact */
 
 #contact {
   color: white;
   min-height: 100vh;
-  background-image: url('../images/contact-bg.png');
+  background-image: url('../images/contact-bg.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover
 }
 
 #contact .container {
@@ -895,7 +865,7 @@ header {
   margin: auto;
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around
 }
 
 #contact h5 {
@@ -903,18 +873,18 @@ header {
   font-size: 42px;
   font-weight: 700;
   padding-top: 120px;
-  margin: 0;
+  margin: 0
 }
 
 #contact .section-1 {
-  width: 37%;
+  width: 37%
 }
 
 #contact .section-1 p {
   margin-top: 28px;
   color: white;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 500
 }
 
 #contact .section-1 span {
@@ -922,37 +892,37 @@ header {
   font-size: 16px;
   font-weight: 400;
   margin: 44px 0;
-  display: block;
+  display: block
 }
 
 #contact .section-1 .phone::before {
   content: url('../images/fa-phone.png');
-  margin-right: 15px;
+  margin-right: 15px
 }
 
 #contact .section-1 .email::before {
   content: url('../images/fa-envelope.png');
-  margin-right: 15px;
+  margin-right: 15px
 }
 
 #contact .section-1 .address::before {
   content: url('../images/fa-building-o.png');
-  margin-right: 15px;
+  margin-right: 15px
 }
 
 #contact .section-1 a {
-  color: white;
+  color: white
 }
 
 #contact .section-2 {
-  width: 41%;
+  width: 41%
 }
 
 #contact form {
   margin-top: 100px;
   background-color: white;
   padding: 58px 50px;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 #contact form label {
@@ -961,68 +931,63 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
-  display: block;
+  display: block
 }
 
 .inputs-group {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .inputs-group .yourname {
-  width: 55%;
+  width: 55%
 }
 
 .inputs-group .budget {
-  width: 40%;
+  width: 40%
 }
 
 .inputs-group .email {
-  width: 100%;
+  width: 100%
 }
 
 .inputs-group .message {
-  width: 100%;
+  width: 100%
 }
 
 .submit {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .checkbox-group {
   display: flex;
-  align-items: center !important;
+  align-items: center !important
 }
 
 .checkbox-group label {
-  color: rgba(21.06, 20.34, 56.79, 0.40) !important;
+  color: rgba(21.06, 20.34, 56.79, .40) !important;
   font-size: 16px;
   margin: 0 !important;
-  padding-left: 8px;
+  padding-left: 8px
 }
-
-/* End Contact */
-
-/* Start Pricing */
 
 #pricing {
   min-height: 100vh;
-  background-image: url('../images/bg-pricing.png');
+  background-image: url('../images/bg-pricing.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding-bottom: 100px;
+  padding-bottom: 100px
 }
 
 #pricing .container {
-
   width: 75%;
-  margin: auto;
+  margin: auto
 }
 
 #pricing h5 {
@@ -1031,7 +996,7 @@ header {
   margin: 0;
   font-size: 42px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 52px
 }
 
 #pricing .text {
@@ -1041,26 +1006,26 @@ header {
   width: 50%;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 54px;
+  margin-bottom: 54px
 }
 
 #price-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 #price-cards .price-card {
   width: 31%;
   border-radius: 10px;
   padding: 44px 66px 44px 56px;
-  border: 2px rgba(255, 255, 255, 0.2) solid;
+  border: 2px rgba(255, 255, 255, .2) solid
 }
 
 .price-card h6 {
   padding: 0 27px;
   font-size: 22px;
   font-weight: 500;
-  margin: 0;
+  margin: 0
 }
 
 .price-card .price {
@@ -1072,7 +1037,7 @@ header {
   position: relative;
   display: inline-block;
   margin-top: 26px;
-  margin-bottom: 44px;
+  margin-bottom: 44px
 }
 
 .price-card .price sup {
@@ -1081,38 +1046,38 @@ header {
   top: -20px;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 .price-card .features span {
   font-size: 16px;
   font-weight: 400;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 14px
 }
 
 .price-card .features span:hover {
-  padding-left: 6px;
+  padding-left: 6px
 }
 
 .price-card .features span::before {
   content: url('../images/check-Icon.png');
   width: 12px;
   height: auto;
-  margin-right: 15px;
+  margin-right: 15px
 }
 
 .price-card .features .uncheck {
   padding-left: 27px;
-  opacity: 0.7;
+  opacity: .7
 }
 
 .price-card .features .uncheck:hover {
-  padding-left: 33px;
+  padding-left: 33px
 }
 
 .price-card .features .uncheck::before {
-  display: none;
+  display: none
 }
 
 .price-card .get-started {
@@ -1120,37 +1085,33 @@ header {
   width: 100%;
   padding: 17px 0;
   border-radius: 120px;
-  border: 2px rgba(255, 255, 255, 0.3) solid;
+  border: 2px rgba(255, 255, 255, .3) solid;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
   color: white;
   text-decoration: none;
   margin-top: 30px;
-  margin-bottom: 26px;
+  margin-bottom: 26px
 }
 
 .price-card .get-started:hover {
   border: 2px #E93A7D solid !important;
-  background-color: #E93A7D !important;
+  background-color: #E93A7D !important
 }
 
 .price-card .active {
   border: 2px #E93A7D solid !important;
-  background-color: #E93A7D !important;
+  background-color: #E93A7D !important
 }
 
 .price-card .active:hover {
   border: 2px #b6245c solid !important;
-  background-color: #b6245c !important;
+  background-color: #b6245c !important
 }
 
-/* End Pricing */
-
-/* Start Footer */
-
 footer {
-  color: white;
+  color: white
 }
 
 footer .upper-section {
@@ -1160,7 +1121,7 @@ footer .upper-section {
   align-items: center;
   justify-content: space-between;
   width: 75%;
-  margin: auto;
+  margin: auto
 }
 
 footer .upper-section h6 {
@@ -1169,8 +1130,8 @@ footer .upper-section h6 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -0.293px;
-  margin: 0;
+  letter-spacing: -.293px;
+  margin: 0
 }
 
 footer .upper-section a {
@@ -1179,13 +1140,13 @@ footer .upper-section a {
   font-weight: 400;
   line-height: 26px;
   color: white;
-  margin-left: 27px;
+  margin-left: 27px
 }
 
 footer hr {
   width: 75%;
   margin: auto;
-  opacity: 0.3;
+  opacity: .3
 }
 
 footer .lower-section {
@@ -1195,7 +1156,7 @@ footer .lower-section {
   width: 75%;
   margin: auto;
   padding-top: 47px;
-  padding-bottom: 40px;
+  padding-bottom: 40px
 }
 
 footer .lower-section a {
@@ -1205,80 +1166,77 @@ footer .lower-section a {
   font-weight: 400;
   line-height: 26px;
   margin-right: 29px;
-  text-decoration: none;
+  text-decoration: none
 }
 
 footer .copy-right {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400
 }
 
-footer .copy-right a{
-  margin: 0;
+footer .copy-right a {
+  margin: 0
 }
 
 footer a:hover {
-  opacity: 0.7;
+  opacity: .7
 }
 
-/* Animations */
 @keyframes fadeShow {
   0% {
-    opacity: 0;
+    opacity: 0
   }
 
   100% {
-    opacity: 1;
+    opacity: 1
   }
 }
 
 @keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(100px)
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0)
   }
 }
 
 @keyframes fadeDown {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-100px)
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0)
   }
 }
 
 @keyframes fadeLeft {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(100%)
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0)
   }
 }
 
 @keyframes fadeRight {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-100%)
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0)
   }
 }
-
-/* End Animations */
